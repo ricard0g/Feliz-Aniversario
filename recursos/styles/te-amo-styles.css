@@ -81,3 +81,28 @@ strong {
     opacity: 1;
     transform: translateX(0);
 }
+
+.link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 2% 5%;
+    width: fit-content;
+    margin: 0 auto;
+    color: #4A081B;
+    border: none;
+    border-radius: 50px;
+    background: #D5A4B2;
+    box-shadow: 5px 5px 0px black;
+    transition: all 150ms ease;
+}
+
+.link:hover {
+    background-color: #4a081b9f;
+    color: #D5A4B2;
+    border: 2px solid #D5A4B2;
+}
+
+.link:active {
+    transform: translateY(5px);
+    box-shadow: none;
+}
