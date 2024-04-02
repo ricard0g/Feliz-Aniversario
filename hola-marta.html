@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Marta, Feliz Aniversario!</title>
+    <link rel="stylesheet" href="./recursos/styles/reset.css">
+    <link rel="stylesheet" href="./recursos/styles/hola-marta-styles.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h2 class="sub-title">Hola Mi Vida Entera! <span class="emoji">&#128378;&#127996;</span></h2>
+            <h1 class="title">Feliz 3 Aniversario!</h1>
+            <a href="#" class="link">Empezar Experiencia</a>
+        </div>
+    </main>
+    <script>
+        function hearts(){
+            const container = document.querySelector('.container');
+
+            const create = document.createElement('div');
+            create.classList.add('hearts');
+            create.innerHTML = '🧡';
+            container.appendChild(create);
+
+            create.style.left = Math.random() * 100 + '%';
+            create.style.animationDuration = Math.random() * 3 + 2 + 's';
+
+            setTimeout(() => {
+                create.remove();
+            }, 3000)
+        }
+        hearts();
+
+        setInterval(hearts, 100);
+    </script>
+</body>
+</html>

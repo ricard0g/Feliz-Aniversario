@@ -1,0 +1,95 @@
+/* Universal */
+
+html {
+    font-size: 16px;
+}
+
+/* Container */
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, #FFDBE5, #AA677A);
+    color: #4A081B;
+}
+
+.sub-title {
+    font-size: 1.85rem;
+    font-weight: 400;
+    margin-bottom: 2%;
+    transition: 150ms linear;
+}
+
+.emoji {
+    font-size: 2rem;
+    transition: 150ms linear;
+}
+
+.emoji:hover {
+    font-size: 2.5rem;
+}
+
+.sub-title:hover {
+    font-size: 2.1rem;
+    color: #ED0D67;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 3%;
+    transition: 150ms linear;
+}
+
+.title:hover {
+    font-size: 4.3rem;
+    color: #ED0D67;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1% 5%;
+    width: fit-content;
+    margin: 0 auto;
+    color: #D5A4B2;
+    border: none;
+    border-radius: 50px;
+    background: #4A081B;
+    box-shadow: 5px 5px 0px black;
+    transition: all 150ms ease;
+}
+
+.link:hover {
+    background-color: #D5A4B2;
+    color: #4A081B;
+    border: 2px solid #4A081B;
+}
+
+.link:active {
+    transform: translateY(5px);
+    box-shadow: none;
+}
+
+/* Hearts style */
+
+.hearts {
+    font-size: 23px;
+    font-weight: bold;
+    position: fixed;
+    top: -1vh;
+    left: 0;
+    animation: fall 1s ease-in infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(150vh);
+    }
+    
+}
