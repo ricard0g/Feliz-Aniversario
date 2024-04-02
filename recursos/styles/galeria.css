@@ -1,0 +1,33 @@
+body {
+    background-color: #4A081B;
+    padding: 2%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    row-gap: 2%;
+    column-gap: 2%;
+    width: 100%;
+    height: auto;
+    place-items: center;
+}
+
+.img-container {
+    border-radius: 50px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 150ms ease;
+}
+
+.up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
