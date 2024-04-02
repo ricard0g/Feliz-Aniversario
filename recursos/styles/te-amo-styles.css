@@ -54,6 +54,8 @@ strong {
     line-height: 1.5;
     letter-spacing: 0.5px;
     font-weight: bold;
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .quote cite {
@@ -63,11 +65,19 @@ strong {
     font-style: italic;
 }
 
-p {
+.p {
     font-size: 1.75rem;
     width: 50ch;
     margin: 0 auto;
     line-height: 1.2;
     letter-spacing: 1px;
     margin-bottom: 3.5%;
+    opacity: 0;
+    transform: translateX(25px);
+    transition: all 150ms ease;
+}
+
+.up {
+    opacity: 1;
+    transform: translateX(0);
 }
