@@ -3,17 +3,30 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+			rel="shortcut icon"
+			href="./recursos/media/favicon-heart.svg"
+			type="image/x-icon"
+		/>
 		<title>Kalesh Giratoria</title>
+        <link rel="stylesheet" href="./recursos/styles/reset.css">
+        <link rel="stylesheet" href="./recursos/styles/kali-giratoria.css">
+        <script src="./kali-giratoria.js" defer></script>
 	</head>
 	<body>
+        <div id="particles-js"></div>
 		<div class="container">
 			<div class="img-container">
-				<img src="" alt="" class="kalesh-img" />
+				<img src="./recursos/media/kali-giratoria-img.png" alt="" class="kalesh-img" />
 			</div>
 			<div class="buttons-container">
-				<button></button>
-				<button></button>
+				<button class="left">Izquierda</button>
+				<button class="right">Derecha</button>
 			</div>
 		</div>
+        <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+		<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+		<!-- stats.js lib -->
+		<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 	</body>
 </html>

@@ -55,3 +55,21 @@ particlesJS("particles-js", {
 	retina_detect: true,
 });
 var count_particles, stats, update;
+
+// Girar imagen
+
+const kaliImg = document.querySelector('.kalesh-img');
+const leftButton = document.querySelector('.left');
+const rightButton = document.querySelector('.right');
+
+console.log(kaliImg);
+console.log(leftButton);
+console.log(rightButton);
+
+leftButton.addEventListener('click', () => {
+    kaliImg.style.transform += 'rotate(-15deg)';
+})
+
+rightButton.addEventListener('click', () => {
+    kaliImg.style.transform += 'rotate(15deg)';
+})
