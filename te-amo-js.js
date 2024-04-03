@@ -7,7 +7,7 @@ const observer = new IntersectionObserver(entries => {
         if (entry.isIntersecting) observer.unobserve(entry.target);
     });
 }, {
-    threshold: 1
+    threshold: 0.5
 });
 
 paragraphs.forEach(paragraph => {
