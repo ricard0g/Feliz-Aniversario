@@ -60,3 +60,24 @@ canvas {
     border-radius: 50px;
     background: #4A081B;
 }
+
+@media only screen and (max-width: 768px) {
+    .img-container {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .kalesh-img {
+        max-width: 100%;
+        margin: 15% auto;
+    }
+
+    .buttons-container {
+        width: 90%;
+    }
+
+    .buttons-container button {
+        font-size: 1.25rem;
+        padding: 5% 8%;
+    }
+}
