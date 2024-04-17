@@ -67,7 +67,7 @@ const kaliFrases = ["Miau", "Y donde concho esta mi mejor amiga Nalusca que quie
 let n = 0;
 
 leftButton.addEventListener('click', () => {
-    kaliImg.style.transform += 'rotate(-15deg)';
+    kaliImg.style.transform += 'rotate(-15deg)';                     
 	const randomIndex = Math.floor(Math.random() * kaliFrases.length);
 	n++;
 	if (n === 5) {
