@@ -61,15 +61,31 @@ var count_particles, stats, update;
 const martiImg = document.querySelector('.marti-img');
 const leftButton = document.querySelector('.left');
 const rightButton = document.querySelector('.right');
+const martiFrases = ["A ver, y a donde concho fuisteis ayer?", "Todo muy mal muy mal muy mal", "Y donde concho estan mis galletotas Principe?", "Donde esta papi?", "Donde esta mami?"]
 
-console.log(martiImg);
-console.log(leftButton);
-console.log(rightButton);
+// Variable that stores the amount flips
+let n = 0;
 
 leftButton.addEventListener('click', () => {
     martiImg.style.transform += 'rotate(-15deg)';
+	const randomIndex = Math.floor(Math.random() * martiFrases.length);
+	n++;
+	console.log(`Right now n = ${n}`)
+	if (n === 5) {
+		alert(`Marti Giratoria dice:\n\n${martiFrases[randomIndex]}`);
+		n = 0;
+		console.log(`N is reainitialized as 0 ==> ${n}`)
+	}
 })
 
 rightButton.addEventListener('click', () => {
     martiImg.style.transform += 'rotate(15deg)';
+	const randomIndex = Math.floor(Math.random() * martiFrases.length);
+	n--;
+	console.log(`Right now n = ${n}`);
+	if (n === -5) {
+		alert(`Marti Giratoria dice:\n\n${martiFrases[randomIndex]}`);
+		n = 0
+		console.log(`N is reainitialized as 0 ==> ${n}`)
+	};
 })

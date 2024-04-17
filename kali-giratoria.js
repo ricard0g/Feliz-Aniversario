@@ -61,15 +61,27 @@ var count_particles, stats, update;
 const kaliImg = document.querySelector('.kalesh-img');
 const leftButton = document.querySelector('.left');
 const rightButton = document.querySelector('.right');
+const kaliFrases = ["Miau", "Y donde concho esta mi mejor amiga Nalusca que quiero jugar", "Hola, quiero comer todo el día hasta no saberme mi nombre!", "Sisi todo muy bien pero, jugamos?", "Lo siento no voy a hacer nada con mi vida, es que tengo que dormir todo el día"];
 
-console.log(kaliImg);
-console.log(leftButton);
-console.log(rightButton);
+// Variable that stores the amount flips
+let n = 0;
 
 leftButton.addEventListener('click', () => {
     kaliImg.style.transform += 'rotate(-15deg)';
+	const randomIndex = Math.floor(Math.random() * kaliFrases.length);
+	n++;
+	if (n === 5) {
+		alert(`Kali Giratoria dice:\n\n${kaliFrases[randomIndex]}`);
+		n = 0;
+	}
 })
 
 rightButton.addEventListener('click', () => {
     kaliImg.style.transform += 'rotate(15deg)';
+	const randomIndex = Math.floor(Math.random() * kaliFrases.length);
+	n--;
+	if (n === -5) {
+		alert(`Kali Giratoria dice:\n\n${kaliFrases[randomIndex]}`);
+		n = 0;
+	};
 })
