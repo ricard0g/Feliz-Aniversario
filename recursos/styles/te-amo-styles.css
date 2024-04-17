@@ -1,108 +1,145 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 /* Universal */
 
 html {
-    font-size: 16px;
-    font-family: Quicksand, sans-serif;
+	font-size: 16px;
+	font-family: Quicksand, sans-serif;
 }
 
 body {
-    background-color: #4A081B;
-    padding: 5%;
-    color: #FFDBE5;
+	background-color: #4a081b;
+	padding: 5%;
+	color: #ffdbe5;
 }
 
 strong {
-    font-weight: bold;
-    font-style: italic;
+	font-weight: bold;
+	font-style: italic;
 }
 
 /* Container styles */
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: center;
-    text-align: center;
-    width: 65%;
-    margin: 0 auto;
-    height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: center;
+	text-align: center;
+	width: 65%;
+	margin: 0 auto;
+	height: auto;
 }
 
 .container h1 {
-        font-size: 2.85rem;
-        font-weight: 600;
-        margin-bottom: 5%;
+	font-size: 2.85rem;
+	font-weight: 600;
+	margin-bottom: 5%;
 }
 
 .quote {
-    background-color: #FFDBE5;
-    width: fit-content;
-    padding: 1%;
-    margin: 0 auto 5% auto;
-    border-radius: 20px;
+	background-color: #ffdbe5;
+	width: fit-content;
+	padding: 1%;
+	margin: 0 auto 5% auto;
+	border-radius: 20px;
 }
 
 .quote-text {
-    font-size: 1.3rem;
-    max-width: 45ch;
-    margin: 0 auto;
-    margin-bottom: 4%;
-    color: #4A081B;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
-    font-weight: bold;
-    opacity: 1;
-    transform: translateX(0);
+	font-size: 1.3rem;
+	max-width: 45ch;
+	margin: 0 auto;
+	margin-bottom: 4%;
+	color: #4a081b;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	font-weight: bold;
+	opacity: 1;
+	transform: translateX(0);
 }
 
 .quote cite {
-    color: #4A081B;
-    font-size: 1.25rem;
-    font-weight: 500;
-    font-style: italic;
+	color: #4a081b;
+	font-size: 1.25rem;
+	font-weight: 500;
+	font-style: italic;
 }
 
 .p {
-    font-size: 1.75rem;
-    width: 50ch;
-    margin: 0 auto;
-    line-height: 1.2;
-    letter-spacing: 1px;
-    margin-bottom: 3.5%;
-    opacity: 0;
-    transform: translateX(25px);
-    transition: all 150ms ease;
+	font-size: 1.75rem;
+	width: 50ch;
+	margin: 3.5% auto;
+	line-height: 1.2;
+	letter-spacing: 1px;
+	opacity: 0;
+	transform: translateX(25px);
+	transition: all 150ms ease;
 }
 
 .up {
-    opacity: 1;
-    transform: translateX(0);
+	opacity: 1;
+	transform: translateX(0);
 }
 
 .link {
-    text-decoration: none;
-    font-size: 1.5rem;
-    padding: 2% 5%;
-    width: fit-content;
-    margin: 0 auto;
-    color: #4A081B;
-    border: none;
-    border-radius: 50px;
-    background: #D5A4B2;
-    box-shadow: 5px 5px 0px black;
-    transition: all 150ms ease;
+	text-decoration: none;
+	font-size: 1.5rem;
+	padding: 2% 5%;
+	width: fit-content;
+	margin: 0 auto;
+	color: #4a081b;
+	border: none;
+	border-radius: 50px;
+	background: #d5a4b2;
+	box-shadow: 5px 5px 0px black;
+	transition: all 150ms ease;
 }
 
 .link:hover {
-    background-color: #4a081b9f;
-    color: #D5A4B2;
-    border: 2px solid #D5A4B2;
+	background-color: #4a081b9f;
+	color: #d5a4b2;
+	border: 2px solid #d5a4b2;
 }
 
 .link:active {
-    transform: translateY(5px);
-    box-shadow: none;
+	transform: translateY(5px);
+	box-shadow: none;
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		padding: 15% 5%;
+	}
+
+	.container {
+		width: 95%;
+	}
+
+	.container h1 {
+		font-size: 2rem;
+		margin-bottom: 15%;
+	}
+
+    .quote {
+        padding: 5%;
+        margin: 0 auto 10% auto;
+    }
+
+    .quote-text {
+        font-size: 1.125rem;
+        max-width: 35ch;
+        margin-bottom: 6%;
+    }
+
+    .p {
+        font-size: 1.25rem;
+        width: 100%;
+        margin: 5% auto;
+    }
+
+    .link {
+        margin: 10% auto;
+        font-size: 1.25rem;
+        padding: 5% 7%;
+    }
 }
